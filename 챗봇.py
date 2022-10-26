@@ -19,8 +19,8 @@ def get_dataset():
 model = cached_model()
 df = get_dataset()
 
-st.header('심리상담 챗봇')
-st.markdown("[울산경의고등학교](http://www.dcoder.kr)")
+st.header('울산')
+st.markdown("[울산경의고등학교](http://www.gyeongui.hs.kr)")
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
@@ -29,7 +29,7 @@ if 'past' not in st.session_state:
     st.session_state['past'] = []
 
 with st.form('form', clear_on_submit=True):
-    user_input = st.text_input('당신: ', '')
+    user_input = st.text_input('질문하세요: ', '')
     submitted = st.form_submit_button('전송')
 
 if submitted and user_input:
