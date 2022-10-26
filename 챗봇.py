@@ -19,9 +19,10 @@ def get_dataset():
 model = cached_model()
 df = get_dataset()
 
-st.header('울산')
+st.header('노잼도시 울산 살리기 프로젝트')
+st.markdown("울산경의고등학교 코드포스에서 만든 울산 홍보 챗봇입니다!)
 st.markdown("[울산경의고등학교](http://www.gyeongui.hs.kr)")
-st.markdown("[sbdfkahskdfhasdf]")
+
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
