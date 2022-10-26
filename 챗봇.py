@@ -39,7 +39,7 @@ if submitted and user_input:
     answer = df.loc[df['distance'].idxmax()]
 
     st.session_state.past.append(user_input)
-    st.session_state.generated.append(answer['챗봇'])
+    st.session_state.generated.append(answer['챗봇/대답'])
 
 for i in range(len(st.session_state['past'])):
     message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
