@@ -20,17 +20,6 @@ model = cached_model()
 df = get_dataset()
 
 st.header('노잼도시 울산 되살리기 프로젝트')
-st.markdown(
-    f"""
-    <style>
-    .stApp {{
-             background-image:url("https://github.com/gouheetae/2022AI_-/blob/main/unnamed.jpg?raw=true");
-             background-attachment: fixed;
-             background-size: inherit
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True)
 #background-image: url("https://pixabay.com/ko/vectors/%ea%b3%a0%eb%9e%98-%eb%8f%99%eb%ac%bc-%ec%83%9d%ec%84%a0-%eb%b0%94%eb%8b%a4-%ec%83%9d%ed%99%9c-158438/.jpg");
 st.markdown("울산경의고등학교 코드포스에서 만든 울산을 홍보하기 워한 챗봇입니다!")
 st.markdown("울산의 여러 관광지들을 알려드립니다!")
