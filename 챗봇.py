@@ -19,7 +19,7 @@ def get_dataset():
 model = cached_model()
 df = get_dataset()
 
-st.header('\033[33m' +'노잼도시 울산 되살리기 프로젝트'+'\033[0m')
+st.header('노잼도시 울산 되살리기 프로젝트')
 st.markdown("울산경의고등학교 코드포스에서 만든 울산을 홍보하기 워한 챗봇입니다!")
 st.markdown("울산의 여러 관광지들을 알려드립니다!")
 st.markdown("[울산경의고등학교](http://www.gyeongui.hs.kr)")
