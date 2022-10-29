@@ -20,7 +20,7 @@ model = cached_model()
 df = get_dataset()
 
 st.header('노잼도시 울산 되살리기 프로젝트')
-st.markdown(
+#st.markdown(
     f"""
     <style>
     .stApp {{
@@ -36,6 +36,10 @@ st.markdown("울산경의고등학교 코드포스에서 만든 울산을 홍보
 st.markdown("울산의 여러 관광지들을 알려드립니다!")
 st.markdown('[울산경의고등학교](http://www.gyeongui.hs.kr)')
 
+from PIL import Image
+image = Image.open('https://github.com/gouheetae/2022AI_-/blob/main/unnamed.jpg')
+
+st.image(image, caption='Sunrise by the mountains')
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
 
