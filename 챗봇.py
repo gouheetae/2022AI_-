@@ -36,8 +36,8 @@ for i in range(len(st.session_state['past'])):
         message(st.session_state['generated'][i], key=str(i) + '_bot')
         
 with st.form('form', clear_on_submit=True):
-    user_input = st.text_input('질문하세요: ', '') #질문 칸
-    submitted = st.form_submit_button('전송') #전송 버튼 제작
+    user_input = st.text_input('키워드를 입력하세요: ', '') #질문 칸
+    submitted = st.form_submit_button('더블클릭하세요') #전송 버튼 제작
 
 if submitted and user_input:
     embedding = model.encode(user_input)
