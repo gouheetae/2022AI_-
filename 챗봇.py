@@ -24,7 +24,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-             background-image: url("C:\Users\user\Downloads\122854125-크레인-새-또는-왜가리-비행-아이콘의-실루엣-또는-그림자-검정-잉크-기호입니다-황새-개요-절단-템플릿-또는-흰색-절연-크리에이-티브-배경-벡터-일러스트-레이-션-.jpg");
+             background-image: url("C:\Users\user\Downloads\image-removebg-preview-_2_.jpg");
              background-attachment: fixed;
              background-size: cover
     }}
