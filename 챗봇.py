@@ -20,6 +20,17 @@ model = cached_model()
 df = get_dataset()
 
 st.header('노잼도시 울산 되살리기 프로젝트')
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-attachment: fixed;
+             background-size: cover
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True)
 st.markdown("울산경의고등학교 코드포스에서 만든 울산을 홍보하기 워한 챗봇입니다!")
 st.markdown("울산의 여러 관광지들을 알려드립니다!")
 st.markdown('[울산경의고등학교](http://www.gyeongui.hs.kr)')
@@ -47,8 +58,3 @@ for i in range(len(st.session_state['past'])-1,-1,-1):
     message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
     if len(st.session_state['generated']) > i:
         message(st.session_state['generated'][i], key=str(i) + '_bot')
-    
-
-
-    
-    
