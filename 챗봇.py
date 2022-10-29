@@ -24,13 +24,14 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-             background-image: url("C:\Users\user\Downloads\image-removebg-preview-_2_.jpg");
+             background-image:'bg.jpg';
              background-attachment: fixed;
              background-size: cover
     }}
     </style>
     """,
     unsafe_allow_html=True)
+#background-image: url("C:\Users\user\Downloads\image-removebg-preview-_2_.jpg");
 st.markdown("울산경의고등학교 코드포스에서 만든 울산을 홍보하기 워한 챗봇입니다!")
 st.markdown("울산의 여러 관광지들을 알려드립니다!")
 st.markdown('[울산경의고등학교](http://www.gyeongui.hs.kr)')
