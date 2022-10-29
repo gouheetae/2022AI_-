@@ -31,9 +31,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-with st.form('form', clear_on_submit=True):
-    user_input = st.text_input('질문하세요: ', '')
-    submitted = st.form_submit_button('전송')
+
 
 if submitted and user_input:
     embedding = model.encode(user_input)
@@ -44,7 +42,14 @@ if submitted and user_input:
     st.session_state.past.append(user_input)
     st.session_state.generated.append(answer['챗봇/대답'])
 
+
+    
 for i in range(len(st.session_state['past'])):
     message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
     if len(st.session_state['generated']) > i:
         message(st.session_state['generated'][i], key=str(i) + '_bot')
+
+with st.form('form', clear_on_submit=True):
+    user_input = st.text_input('질문하세요: ', '')
+    submitted = st.form_submit_button('전송')    
+    
