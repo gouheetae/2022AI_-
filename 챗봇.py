@@ -32,7 +32,7 @@ if 'past' not in st.session_state:
     
 with st.form('form', clear_on_submit=True):
     user_input = st.text_input('키워드를 입력하세요: ', '') #질문 칸
-    submitted = st.form_submit_button('더블클릭하세요') #전송 버튼 제작
+    submitted = st.form_submit_button('클릭') #전송 버튼 제작
 
 if submitted and user_input:
     embedding = model.encode(user_input)
@@ -45,7 +45,7 @@ if submitted and user_input:
 
 for i in range(len(st.session_state['past'])-1,-1,-1):
     message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
-    if len(st.session_state['generated']) > i:
+    if len(st.session_state['generated']) < i:
         message(st.session_state['generated'][i], key=str(i) + '_bot')
     
 
