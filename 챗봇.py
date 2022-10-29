@@ -26,7 +26,7 @@ st.markdown(
     .stApp {{
              background-image:url("https://github.com/gouheetae/2022AI_-/blob/main/unnamed.jpg?raw=true");
              background-attachment: fixed;
-             background-size: cover
+             background-size: auto
     }}
     </style>
     """,
